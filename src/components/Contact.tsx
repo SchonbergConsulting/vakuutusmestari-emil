@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Mail, Clock, MessageCircle, MapPin } from "lucide-react";
-
 const Contact = () => {
-  return (
-    <section id="yhteystiedot" className="py-20 bg-gradient-subtle">
+  return <section id="yhteystiedot" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -33,7 +31,7 @@ const Contact = () => {
               </a>
               <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground">
                 <Clock className="h-4 w-4" />
-                <span>Ma-Pe 9-17</span>
+                <span>Ma-Su 9-20</span>
               </div>
             </CardContent>
           </Card>
@@ -102,10 +100,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2">Voitko auttaa olemassa olevien yritysvakuutusten kanssa?</h4>
-                  <p className="text-muted-foreground text-sm">
-                    Kyllä, voin arvioida yrityksen nykyisiä vakuutuksia ja antaa 
-                    suosituksia parannuksista tai muutoksista riskienhallinnan parantamiseksi.
-                  </p>
+                  <p className="text-muted-foreground text-sm">Kyllä, voin arvioida yrityksen nykyisiä vakuutuksia ja antaa suosituksia parannuksista tai muutoksista.</p>
                 </div>
               </div>
             </div>
@@ -144,8 +139,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;

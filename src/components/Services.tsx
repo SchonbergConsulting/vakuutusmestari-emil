@@ -1,48 +1,26 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shield, Heart, Building2, CheckCircle } from "lucide-react";
-
 const Services = () => {
-  const companies = [
-    {
-      name: "Pohjola Vakuutus Oy",
-      icon: Shield,
-      description: "Yrityksen vahinkovakuutukset",
-      services: [
-        "Kiinteistövakuutus",
-        "Kaluskovakuutus", 
-        "Vastuuvakuutukset",
-        "Keskeytyvakuutus"
-      ],
-      highlight: "Pääasiallinen vakuutusyhtiö"
-    },
-    {
-      name: "OP-Henkivakuutus Oy",
-      icon: Heart,
-      description: "Henkilöstövakuutukset",
-      services: [
-        "Ryhmähenkivakuutus",
-        "Avainhenkilövakuutus",
-        "Ryhmäeläkevakuutus",
-        "Henkilöstöetuudet"
-      ],
-      highlight: "Henkilöstöturva"
-    },
-    {
-      name: "Ilmarinen",
-      icon: Building2,
-      description: "Lakisääteiset työeläkevakuutukset",
-      services: [
-        "TyEL-vakuutus",
-        "YEL-vakuutus",
-        "MYEL-vakuutus",
-        "Työeläketurva"
-      ],
-      highlight: "Työeläketurva"
-    }
-  ];
-
-  return (
-    <section id="palvelut" className="py-20 bg-gradient-subtle">
+  const companies = [{
+    name: "Pohjola Vakuutus Oy",
+    icon: Shield,
+    description: "Yrityksen vahinkovakuutukset",
+    services: ["Kiinteistövakuutus", "Kaluskovakuutus", "Vastuuvakuutukset", "Keskeytyvakuutus"],
+    highlight: "Pääasiallinen vakuutusyhtiö"
+  }, {
+    name: "OP-Henkivakuutus Oy",
+    icon: Heart,
+    description: "Henkilöstövakuutukset",
+    services: ["Ryhmähenkivakuutus", "Avainhenkilövakuutus", "Ryhmäeläkevakuutus", "Henkilöstöetuudet"],
+    highlight: "Henkilöstöturva"
+  }, {
+    name: "Ilmarinen",
+    icon: Building2,
+    description: "Lakisääteiset työeläkevakuutukset",
+    services: ["TyEL-vakuutus", "YEL-vakuutus", "MYEL-vakuutus", "Työeläketurva"],
+    highlight: "Työeläketurva"
+  }];
+  return <section id="palvelut" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -56,9 +34,8 @@ const Services = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {companies.map((company, index) => {
-            const Icon = company.icon;
-            return (
-              <Card key={index} className="shadow-card hover:shadow-elegant transition-all duration-300">
+          const Icon = company.icon;
+          return <Card key={index} className="shadow-card hover:shadow-elegant transition-all duration-300">
                 <CardHeader className="text-center">
                   <div className="mx-auto mb-4 p-3 bg-accent rounded-full w-fit">
                     <Icon className="h-8 w-8 text-primary" />
@@ -71,17 +48,14 @@ const Services = () => {
                 <CardContent>
                   <p className="text-muted-foreground mb-4">{company.description}</p>
                   <ul className="space-y-2">
-                    {company.services.map((service, serviceIndex) => (
-                      <li key={serviceIndex} className="flex items-center space-x-2">
+                    {company.services.map((service, serviceIndex) => <li key={serviceIndex} className="flex items-center space-x-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
                         <span className="text-sm">{service}</span>
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
                 </CardContent>
-              </Card>
-            );
-          })}
+              </Card>;
+        })}
         </div>
 
         <div className="bg-white rounded-lg p-8 shadow-card">
@@ -100,17 +74,15 @@ const Services = () => {
                   <span>Vakuutusedustustaja - turvallisuus ja luotettavuus</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-primary mt-0.5" />
-                  <span>Kattava tuotevalikoima kolmesta eri yhtiöstä</span>
+                  
+                  <span>
+                </span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-primary mt-0.5" />
-                  <span>Yrityksen riskien asiantunteva arviointi</span>
+                  <span>Vastaan oikeasti puhelimeen kun minulle soitetaan </span>
                 </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-primary mt-0.5" />
-                  <span>Korvaustilanteissa tuki ja ohjeistus</span>
-                </li>
+                
               </ul>
             </div>
             <div className="bg-accent rounded-lg p-6 text-center">
@@ -126,8 +98,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Services;
