@@ -11,7 +11,8 @@ const About = () => {
             Tietoa minusta
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Kokenut vakuutusalan ammattilainen, joka toimii asiakkaiden etujen mukaisesti.
+            Kokenut vakuutusalan ammattilainen, joka erikoistunut yritysten 
+            vakuutusratkaisuihin ja toimii aina asiakasyritysten etujen mukaisesti.
           </p>
         </div>
 
@@ -42,9 +43,9 @@ const About = () => {
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Toimin Pohjola Vakuutusyhtiön valtuutettuna vakuutusasiamiehenä ja 
-                olen erikoistunut tarjoamaan asiakkailleni parasta mahdollista palvelua 
+                olen erikoistunut tarjoamaan yrityksille parasta mahdollista palvelua 
                 vakuutusasioissa. Toimintani perustuu luotettavuuteen, asiantuntemukseen 
-                ja henkilökohtaiseen palveluun.
+                ja henkilökohtaiseen palveluun, joka on räätälöity yrityksen tarpeisiin.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -58,7 +59,7 @@ const About = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Users className="h-5 w-5 text-primary" />
-                  <span className="text-sm">Henkilökohtainen palvelu</span>
+                  <span className="text-sm">Yrityskeskeinen palvelu</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-primary" />
@@ -108,9 +109,9 @@ const About = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Riippumaton neuvonta</h4>
                   <p className="text-muted-foreground text-sm">
-                    Valtuutettuna asiamiehenä toimin asiakkaiden etujen mukaisesti 
-                    ja annan puolueetonta neuvontaa vakuutusasioissa. Tavoitteeni 
-                    on löytää juuri sinulle sopivat vakuutusratkaisut.
+                    Valtuutettuna asiamiehenä toimin yritysten etujen mukaisesti 
+                    ja annan puolueetonta neuvontaa liiketoiminnan vakuutusasioissa. 
+                    Tavoitteeni on löytää juuri yrityksellesi sopivat vakuutusratkaisut.
                   </p>
                 </div>
                 <div className="space-y-2">
@@ -120,7 +121,7 @@ const About = () => {
                   </div>
                   <div className="flex items-center space-x-2">
                     <CheckCircle className="h-4 w-4 text-primary" />
-                    <span className="text-sm">Asiakkaan etu etusijalla</span>
+                    <span className="text-sm">Yrityksen etu etusijalla</span>
                   </div>
                 </div>
               </div>

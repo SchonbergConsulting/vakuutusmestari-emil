@@ -6,36 +6,36 @@ const Services = () => {
     {
       name: "Pohjola Vakuutus Oy",
       icon: Shield,
-      description: "Kattavat vahinkovakuutukset",
+      description: "Yrityksen vahinkovakuutukset",
       services: [
-        "Kotivakuutus",
-        "Autovakuutus", 
-        "Matka- ja vapaa-ajan vakuutukset",
-        "Vastuuvakuutukset"
+        "Kiinteistövakuutus",
+        "Kaluskovakuutus", 
+        "Vastuuvakuutukset",
+        "Keskeytyvakuutus"
       ],
       highlight: "Pääasiallinen vakuutusyhtiö"
     },
     {
       name: "OP-Henkivakuutus Oy",
       icon: Heart,
-      description: "Henki- ja säästövakuutukset",
+      description: "Henkilöstövakuutukset",
       services: [
-        "Henkivakuutus",
-        "Eläkevakuutus",
-        "Säästövakuutus",
-        "Sijoitusvakuutus"
+        "Ryhmähenkivakuutus",
+        "Avainhenkilövakuutus",
+        "Ryhmäeläkevakuutus",
+        "Henkilöstöetuudet"
       ],
-      highlight: "Henki- ja säästötuotteet"
+      highlight: "Henkilöstöturva"
     },
     {
       name: "Ilmarinen",
       icon: Building2,
-      description: "Työeläkevakuutukset",
+      description: "Lakisääteiset työeläkevakuutukset",
       services: [
         "TyEL-vakuutus",
         "YEL-vakuutus",
         "MYEL-vakuutus",
-        "Lisäeläketuotteet"
+        "Työeläketurva"
       ],
       highlight: "Työeläketurva"
     }
@@ -46,10 +46,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Vakuutuspalvelut
+            Yritysvakuutukset
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Tarjoan vakuutustuotteita kolmesta luotettavasta yhtiöstä, 
+            Tarjoan yritysvakuutuksia kolmesta luotettavasta yhtiöstä, 
             joiden valtuutettu asiamies olen.
           </p>
         </div>
@@ -88,7 +88,7 @@ const Services = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-4">
-                Miksi valita minut vakuutusasiamieheksesi?
+                Miksi valita minut yrityksen vakuutusasiamieheksesi?
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
@@ -105,18 +105,22 @@ const Services = () => {
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-primary mt-0.5" />
-                  <span>Asiantunteva neuvonta elämäntilanteesi mukaan</span>
+                  <span>Yrityksen riskien asiantunteva arviointi</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-primary mt-0.5" />
+                  <span>Korvaustilanteissa tuki ja ohjeistus</span>
                 </li>
               </ul>
             </div>
             <div className="bg-accent rounded-lg p-6 text-center">
               <div className="aspect-video bg-white/50 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-muted-foreground text-sm">
-                  Kuva asiakaspalvelusta tai toimistosta
+                  Kuva yritysneuvottelusta tai toimistosta
                 </span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Henkilökohtainen palvelu on toimintani perusta
+                Yritysten vakuutustarpeiden tunnistaminen on erikoisalani
               </p>
             </div>
           </div>

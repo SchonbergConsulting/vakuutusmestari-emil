@@ -11,8 +11,8 @@ const Contact = () => {
             Ota yhteyttä
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Autan sinua löytämään oikeat vakuutusratkaisut. Ota rohkeasti yhteyttä 
-            maksuttomaan neuvontaan.
+            Autan yritystäsi löytämään oikeat vakuutusratkaisut. Ota rohkeasti yhteyttä 
+            maksuttomaan yritysneuvontaan.
           </p>
         </div>
 
@@ -69,8 +69,8 @@ const Contact = () => {
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-muted-foreground mb-4 text-sm">
-                Tapaamme mieluiten sinulle sopivassa paikassa tai 
-                verkossa videoneuvottelun kautta.
+                Tapaamme mieluiten yrityksen tiloissa, omassa toimistossani 
+                tai verkossa videoneuvottelun kautta.
               </p>
               <Button variant="secondary" size="lg" className="w-full">
                 Varaa tapaaminen
@@ -89,7 +89,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Onko neuvonta maksutonta?</h4>
                   <p className="text-muted-foreground text-sm">
-                    Kyllä, tarjoan maksutonta neuvontaa vakuutusasioissa. 
+                    Kyllä, tarjoan maksutonta neuvontaa yritysten vakuutusasioissa. 
                     Maksan toimintani vakuutusyhtiöiden palkkioista.
                   </p>
                 </div>
@@ -101,10 +101,10 @@ const Contact = () => {
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">Voitko auttaa olemassa olevien vakuutusten kanssa?</h4>
+                  <h4 className="font-semibold mb-2">Voitko auttaa olemassa olevien yritysvakuutusten kanssa?</h4>
                   <p className="text-muted-foreground text-sm">
-                    Kyllä, voin arvioida nykyisiä vakuutuksiasi ja antaa 
-                    suosituksia parannuksista tai muutoksista.
+                    Kyllä, voin arvioida yrityksen nykyisiä vakuutuksia ja antaa 
+                    suosituksia parannuksista tai muutoksista riskienhallinnan parantamiseksi.
                   </p>
                 </div>
               </div>
@@ -112,31 +112,31 @@ const Contact = () => {
 
             <div className="bg-accent rounded-lg p-6">
               <h3 className="text-xl font-bold mb-4 text-center">
-                Miksi ottaa yhteyttä?
+                Miksi yrityksen kannattaa ottaa yhteyttä?
               </h3>
               <div className="space-y-3">
                 <div className="flex items-start space-x-2">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span className="text-sm">Henkilökohtainen palvelu</span>
+                  <span className="text-sm">Yritykseen räätälöity palvelu</span>
                 </div>
                 <div className="flex items-start space-x-2">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span className="text-sm">Asiantunteva neuvonta</span>
+                  <span className="text-sm">Liiketoiminnan riskien arviointi</span>
                 </div>
                 <div className="flex items-start space-x-2">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span className="text-sm">Maksuttomat konsultaatiot</span>
+                  <span className="text-sm">Maksuttomat yrityskonsultaatiot</span>
                 </div>
                 <div className="flex items-start space-x-2">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span className="text-sm">Pitkäaikaiset asiakassuhteet</span>
+                  <span className="text-sm">Pitkäaikaiset yhteistyösuhteet</span>
                 </div>
               </div>
               
               <div className="mt-6 text-center">
                 <div className="aspect-video bg-white/50 rounded-lg flex items-center justify-center">
                   <span className="text-muted-foreground text-xs">
-                    Kuva asiakasneuvottelusta tai toimistosta
+                    Kuva yritysneuvottelusta tai toimistosta
                   </span>
                 </div>
               </div>

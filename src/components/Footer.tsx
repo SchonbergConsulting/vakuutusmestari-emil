@@ -8,8 +8,8 @@ const Footer = () => {
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-4">Emil Schönberg</h3>
             <p className="text-blue-100 mb-4 leading-relaxed">
-              Valtuutettu vakuutusasiamies, joka tarjoaa henkilökohtaista palvelua 
-              ja asiantuntevaa neuvontaa vakuutusasioissa.
+              Valtuutettu vakuutusasiamies, joka tarjoaa yrityksille henkilökohtaista 
+              palvelua ja asiantuntevaa neuvontaa liiketoiminnan vakuutusasioissa.
             </p>
             <div className="space-y-2 text-sm text-blue-100">
               <div className="flex items-center space-x-2">
@@ -26,11 +26,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Palvelut</h4>
             <ul className="space-y-2 text-sm text-blue-100">
-              <li>Kotivakuutus</li>
-              <li>Autovakuutus</li>
-              <li>Henkivakuutus</li>
-              <li>Eläkevakuutus</li>
-              <li>Työeläkevakuutus</li>
+              <li>Kiinteistövakuutus</li>
+              <li>Kaluskovakuutus</li>
+              <li>Vastuuvakuutukset</li>
+              <li>Ryhmähenkivakuutus</li>
+              <li>TyEL-vakuutus</li>
             </ul>
           </div>
 

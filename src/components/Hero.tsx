@@ -17,8 +17,8 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl mb-6 text-blue-100 leading-relaxed">
-              Pohjola Vakuutusyhtiön valtuutettu vakuutusasiamies, joka auttaa sinua 
-              löytämään oikeat vakuutusratkaisut elämäntilanteesi mukaan.
+              Pohjola Vakuutusyhtiön valtuutettu vakuutusasiamies, joka auttaa yrityksiä 
+              löytämään oikeat vakuutusratkaisut liiketoiminnan turvaamiseksi.
             </p>
             
             <div className="flex items-center space-x-2 mb-8">
