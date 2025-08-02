@@ -8,8 +8,8 @@ const Footer = () => {
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-4">Emil Schönberg</h3>
             <p className="text-blue-100 mb-4 leading-relaxed">
-              Valtuutettu vakuutusasiamies, joka tarjoaa yrityksille henkilökohtaista 
-              palvelua ja asiantuntevaa neuvontaa liiketoiminnan vakuutusasioissa.
+              Emil Schönberg toimii vakuutusedustustajana ja tarjoaa Pohjola Vakuutus Oy:n, 
+              OP-Henkivakuutus Oy:n ja Ilmarisen vakuutuksia yrityksille.
             </p>
             <div className="space-y-2 text-sm text-blue-100">
               <div className="flex items-center space-x-2">
@@ -48,12 +48,12 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-blue-100">
               <p>
-                Yritykseni on rekisteröity Finanssivalvonnan vakuutusasiamieheksi. 
-                Toimintaani valvoo Finanssivalvonta.
+                Yritys on rekisteröity Finanssivalvonnan vakuutusedustajarekisteriin, 
+                ja sen toimintaa valvoo Finanssivalvonta.
               </p>
             </div>
             <div className="text-sm text-blue-100">
-              © 2024 Emil Schönberg - Valtuutettu vakuutusasiamies
+              © 2024 Emil Schönberg - Vakuutusedustustaja
             </div>
           </div>
         </div>

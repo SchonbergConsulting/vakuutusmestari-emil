@@ -49,8 +49,8 @@ const Services = () => {
             Yritysvakuutukset
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Tarjoan yritysvakuutuksia kolmesta luotettavasta yhtiöstä, 
-            joiden valtuutettu asiamies olen.
+            Emil Schönberg toimii vakuutusedustustajana ja tarjoaa Pohjola Vakuutus Oy:n, 
+            OP-Henkivakuutus Oy:n ja Ilmarisen vakuutuksia.
           </p>
         </div>
 
@@ -88,7 +88,7 @@ const Services = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-4">
-                Miksi valita minut yrityksen vakuutusasiamieheksesi?
+                Miksi valita Emil Schönberg yrityksen vakuutusedustustajaksi?
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
@@ -97,7 +97,7 @@ const Services = () => {
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-primary mt-0.5" />
-                  <span>Valtuutettu asiamies - turvallisuus ja luotettavuus</span>
+                  <span>Vakuutusedustustaja - turvallisuus ja luotettavuus</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-primary mt-0.5" />

@@ -11,8 +11,8 @@ const About = () => {
             Tietoa minusta
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Kokenut vakuutusalan ammattilainen, joka erikoistunut yritysten 
-            vakuutusratkaisuihin ja toimii aina asiakasyritysten etujen mukaisesti.
+            Emil Schönberg toimii vakuutusedustustajana ja on erikoistunut yritysten 
+            vakuutusratkaisuihin toimien aina asiakasyritysten etujen mukaisesti.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ const About = () => {
               <div className="text-center">
                 <h3 className="font-semibold text-lg mb-2">Emil Schönberg</h3>
                 <p className="text-muted-foreground text-sm mb-3">
-                  Valtuutettu vakuutusasiamies
+                  Vakuutusedustustaja
                 </p>
                 <Badge variant="secondary" className="bg-primary text-white">
                   Finanssivalvonnan rekisterissä
@@ -42,16 +42,15 @@ const About = () => {
                 Ammatillinen osaaminen
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Toimin Pohjola Vakuutusyhtiön valtuutettuna vakuutusasiamiehenä ja 
-                olen erikoistunut tarjoamaan yrityksille parasta mahdollista palvelua 
-                vakuutusasioissa. Toimintani perustuu luotettavuuteen, asiantuntemukseen 
-                ja henkilökohtaiseen palveluun, joka on räätälöity yrityksen tarpeisiin.
+                Emil Schönberg toimii vakuutusedustustajana ja tarjoaa Pohjola Vakuutus Oy:n, 
+                OP-Henkivakuutus Oy:n ja Ilmarisen vakuutuksia. Yritys on rekisteröity 
+                Finanssivalvonnan vakuutusedustajarekisteriin, ja sen toimintaa valvoo Finanssivalvonta.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex items-center space-x-3">
                   <Award className="h-5 w-5 text-primary" />
-                  <span className="text-sm">Valtuutettu asiamies</span>
+                  <span className="text-sm">Vakuutusedustustaja</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <BookOpen className="h-5 w-5 text-primary" />
@@ -83,8 +82,8 @@ const About = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Finanssivalvonnan rekisteri</h4>
                   <p className="text-muted-foreground text-sm">
-                    Yritykseni on rekisteröity Finanssivalvonnan vakuutusasiamieheksi, 
-                    ja toimintaani valvoo Finanssivalvonta. Tämä takaa toimintani 
+                    Yritys on rekisteröity Finanssivalvonnan vakuutusedustajarekisteriin, 
+                    ja sen toimintaa valvoo Finanssivalvonta. Tämä takaa toiminnan 
                     läpinäkyvyyden ja luotettavuuden.
                   </p>
                 </div>
@@ -109,7 +108,7 @@ const About = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Riippumaton neuvonta</h4>
                   <p className="text-muted-foreground text-sm">
-                    Valtuutettuna asiamiehenä toimin yritysten etujen mukaisesti 
+                    Vakuutusedustustajana toimin yritysten etujen mukaisesti 
                     ja annan puolueetonta neuvontaa liiketoiminnan vakuutusasioissa. 
                     Tavoitteeni on löytää juuri yrityksellesi sopivat vakuutusratkaisut.
                   </p>

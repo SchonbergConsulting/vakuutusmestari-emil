@@ -9,7 +9,7 @@ const Hero = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Shield className="h-6 w-6" />
-              <span className="text-blue-100 font-medium">Valtuutettu vakuutusasiamies</span>
+              <span className="text-blue-100 font-medium">Vakuutusedustustaja</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
@@ -17,14 +17,14 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl mb-6 text-blue-100 leading-relaxed">
-              Pohjola Vakuutusyhtiön valtuutettu vakuutusasiamies, joka auttaa yrityksiä 
-              löytämään oikeat vakuutusratkaisut liiketoiminnan turvaamiseksi.
+              Emil Schönberg toimii vakuutusedustustajana ja tarjoaa Pohjola Vakuutus Oy:n, 
+              OP-Henkivakuutus Oy:n ja Ilmarisen vakuutuksia yrityksille.
             </p>
             
             <div className="flex items-center space-x-2 mb-8">
               <Award className="h-5 w-5 text-blue-200" />
               <span className="text-blue-100 text-sm">
-                Rekisteröity Finanssivalvonnan vakuutusasiamieheksi
+                Rekisteröity Finanssivalvonnan vakuutusedustajarekisteriin
               </span>
             </div>
 

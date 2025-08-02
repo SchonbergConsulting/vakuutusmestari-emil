@@ -11,7 +11,7 @@ const Header = () => {
               Emil Schönberg
             </div>
             <div className="hidden md:block text-sm text-muted-foreground">
-              Valtuutettu vakuutusasiamies
+              Vakuutusedustustaja
             </div>
           </div>
           
