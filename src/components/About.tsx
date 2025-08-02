@@ -1,10 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, BookOpen, Users, CheckCircle, Shield } from "lucide-react";
-
 const About = () => {
-  return (
-    <section id="tietoa" className="py-20 bg-white">
+  return <section id="tietoa" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -103,7 +101,7 @@ const About = () => {
                 <span>Asiakkaan etu edellä</span>
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="py-[50px]">
               <div className="space-y-4">
                 <div>
                   <h4 className="font-semibold mb-2">Riippumaton neuvonta</h4>
@@ -116,11 +114,11 @@ const About = () => {
                 <div className="space-y-2">
                   <div className="flex items-center space-x-2">
                     <CheckCircle className="h-4 w-4 text-primary" />
-                    <span className="text-sm">Riippumaton neuvonta</span>
+                    <span className="text-sm">Kerron sinulle asiat niin kuin ne on, en koita myydä sinulle ns. turhia vakuutuksia</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <CheckCircle className="h-4 w-4 text-primary" />
-                    <span className="text-sm">Yrityksen etu etusijalla</span>
+                    <span className="text-sm">Yrityksen tarpeet etusijalla, jos tarjoukseni ei ole kiplailukykyinen ymmärrän hyvin jos ett halua vaihtaa palveluntarjoojaa. Lupaan kuitenkin tehdä parhani että saamme kilpailukykyisen tarjouksen sinun yritykselle.</span>
                   </div>
                 </div>
               </div>
@@ -128,8 +126,6 @@ const About = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
