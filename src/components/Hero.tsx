@@ -33,7 +33,7 @@ const Hero = () => {
                 <Phone className="h-5 w-5" />
                 Soita nyt: 050 441 2262
               </Button>
-              <Button variant="secondary" size="lg" className="bg-white/20 backdrop-blur-sm text-white border-white/30 hover:bg-white/30">
+              <Button variant="secondary" size="lg" className="bg-white text-primary hover:bg-gray-100">
                 <Mail className="h-5 w-5" />
                 emil.schonberg@pohjola.fi
               </Button>

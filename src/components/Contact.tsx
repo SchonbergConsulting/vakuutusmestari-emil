@@ -26,7 +26,7 @@ const Contact = () => {
             </CardHeader>
             <CardContent className="text-center">
               <a href="tel:+358504412262" className="block">
-                <Button variant="professional" size="lg" className="w-full mb-4">
+                <Button variant="secondary" size="lg" className="w-full mb-4">
                   050 441 2262
                 </Button>
               </a>
@@ -50,7 +50,7 @@ const Contact = () => {
             </CardHeader>
             <CardContent className="text-center">
               <a href="mailto:emil.schonberg@pohjola.fi" className="block">
-                <Button variant="outline" size="lg" className="w-full mb-4">
+                <Button variant="secondary" size="lg" className="w-full mb-4">
                   emil.schonberg@pohjola.fi
                 </Button>
               </a>

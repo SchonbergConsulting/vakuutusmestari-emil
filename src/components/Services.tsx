@@ -49,7 +49,7 @@ const Services = () => {
                   <p className="text-muted-foreground mb-4">{company.description}</p>
                   <ul className="space-y-2">
                     {company.services.map((service, serviceIndex) => <li key={serviceIndex} className="flex items-center space-x-2">
-                        <CheckCircle className="h-4 w-4 text-primary" />
+                        <CheckCircle className="h-5 w-5 text-primary" />
                         <span className="text-sm">{service}</span>
                       </li>)}
                   </ul>
