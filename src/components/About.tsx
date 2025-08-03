@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, BookOpen, Users, CheckCircle, Shield } from "lucide-react";
+import PhotoCarousel from "./PhotoCarousel";
 const About = () => {
   return <section id="tietoa" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -16,22 +17,7 @@ const About = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <div className="bg-accent rounded-lg p-6 mb-6">
-              <div className="aspect-square bg-white/80 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-muted-foreground text-sm">
-                  Ammatillinen kuva Emil Schönbergistä
-                </span>
-              </div>
-              <div className="text-center">
-                <h3 className="font-semibold text-lg mb-2">Emil Schönberg</h3>
-                <p className="text-muted-foreground text-sm mb-3">
-                  Vakuutusedustustaja
-                </p>
-                <Badge variant="secondary" className="bg-primary text-white">
-                  Finanssivalvonnan rekisterissä
-                </Badge>
-              </div>
-            </div>
+            <PhotoCarousel />
           </div>
 
           <div className="space-y-6">

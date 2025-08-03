@@ -4,20 +4,20 @@ const Services = () => {
   const companies = [{
     name: "Pohjola Vakuutus Oy",
     icon: Shield,
-    description: "Yrityksen vahinkovakuutukset",
-    services: ["Kiinteistövakuutus", "Kaluskovakuutus", "Vastuuvakuutukset", "Keskeytyvakuutus"],
+    description: "Yrityksen vakuutukset",
+    services: ["Vastuuvakuutukset", "Oikeusturva", "Omaisuus- ja kiinteistövakuutus", "Keskeytysvakuutus"],
     highlight: "Pääasiallinen vakuutusyhtiö"
   }, {
     name: "OP-Henkivakuutus Oy",
     icon: Heart,
     description: "Henkilöstövakuutukset",
-    services: ["Ryhmähenkivakuutus", "Avainhenkilövakuutus", "Ryhmäeläkevakuutus", "Henkilöstöetuudet"],
+    services: ["Tapaturmavakuutus", "Terveysturvavakuutus", "Eläkevakuutus", "Ryhmähenkivakuutus"],
     highlight: "Henkilöstöturva"
   }, {
     name: "Ilmarinen",
     icon: Building2,
     description: "Lakisääteiset työeläkevakuutukset",
-    services: ["TyEL-vakuutus", "YEL-vakuutus", "MYEL-vakuutus", "Työeläketurva"],
+    services: ["TyEL-vakuutus", "YEL-vakuutus"],
     highlight: "Työeläketurva"
   }];
   return <section id="palvelut" className="py-20 bg-gradient-subtle">
@@ -62,7 +62,7 @@ const Services = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-4">
-                Miksi valita Emil Schönberg yrityksen vakuutusedustustajaksi?
+                ➤ Miksi valita Emil Schönberg yrityksesi vakuutusedustajaksi?
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
@@ -71,12 +71,7 @@ const Services = () => {
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-primary mt-0.5" />
-                  <span>Vakuutusedustustaja - turvallisuus ja luotettavuus</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  
-                  <span>
-                </span>
+                  <span>➤ Myyn vakuutukset sinun tarpeesi mukaan, mutta toki jos huomaan isoja puutteita niin suosittelen järkeviä lisäratkaisuja.</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-primary mt-0.5" />

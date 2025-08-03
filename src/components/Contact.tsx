@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Mail, Clock, MessageCircle, MapPin } from "lucide-react";
+import businessOffice from "@/assets/business-office.jpg";
 const Contact = () => {
   return <section id="yhteystiedot" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
@@ -67,12 +68,14 @@ const Contact = () => {
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-muted-foreground mb-4 text-sm">
-                Tapaamme mieluiten yrityksen tiloissa, omassa toimistossani 
-                tai verkossa videoneuvottelun kautta.
+                Saamme asiat hoidettua näppärästi puhelimen ja internetin kautta, 
+                mutta halutessasi voin myös tavata Uusimaa-alueella henkilökohtaisesti.
               </p>
-              <Button variant="secondary" size="lg" className="w-full">
-                Varaa tapaaminen
-              </Button>
+              <a href="https://calendly.com/emil-schonberg" target="_blank" rel="noopener noreferrer">
+                <Button variant="secondary" size="lg" className="w-full">
+                  Varaa tapaaminen
+                </Button>
+              </a>
             </CardContent>
           </Card>
         </div>
@@ -129,10 +132,12 @@ const Contact = () => {
               </div>
               
               <div className="mt-6 text-center">
-                <div className="aspect-video bg-white/50 rounded-lg flex items-center justify-center">
-                  <span className="text-muted-foreground text-xs">
-                    Kuva yritysneuvottelusta tai toimistosta
-                  </span>
+                <div className="aspect-video rounded-lg overflow-hidden">
+                  <img 
+                    src={businessOffice} 
+                    alt="Ammatillinen toimisto, jossa neuvotteluja käydään"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>

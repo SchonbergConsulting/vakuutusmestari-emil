@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Phone, Award } from "lucide-react";
+import { Shield, Phone, Award, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -34,7 +34,8 @@ const Hero = () => {
                 Soita nyt: 050 441 2262
               </Button>
               <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary">
-                Tutustu palveluihin
+                <Mail className="h-5 w-5" />
+                emil.schonberg@pohjola.fi
               </Button>
             </div>
           </div>
