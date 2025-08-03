@@ -62,7 +62,7 @@ const Services = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-4">
-                ➤ Miksi valita Emil Schönberg yrityksesi vakuutusedustajaksi?
+                Miksi valita Emil Schönberg yrityksesi vakuutusedustajaksi?
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
@@ -71,7 +71,7 @@ const Services = () => {
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-primary mt-0.5" />
-                  <span>➤ Myyn vakuutukset sinun tarpeesi mukaan, mutta toki jos huomaan isoja puutteita niin suosittelen järkeviä lisäratkaisuja.</span>
+                  <span>Myyn vakuutukset sinun tarpeesi mukaan, mutta toki jos huomaan isoja puutteita niin suosittelen järkeviä lisäratkaisuja.</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-primary mt-0.5" />

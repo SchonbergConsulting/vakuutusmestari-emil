@@ -28,13 +28,13 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center space-x-2">
-            <Button variant="ghost" size="sm" className="hidden md:flex">
+            <Button variant="ghost" size="sm" className="hidden md:flex text-foreground">
               <Phone className="h-4 w-4" />
               050 441 2262
             </Button>
-            <Button variant="professional" size="sm">
+            <Button variant="ghost" size="sm" className="hidden md:flex text-foreground">
               <Mail className="h-4 w-4" />
-              Ota yhteyttä
+              emil.schonberg@pohjola.fi
             </Button>
           </div>
         </div>

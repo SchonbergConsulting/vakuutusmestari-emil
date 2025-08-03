@@ -23,16 +23,6 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
-            <h4 className="font-semibold mb-4">Palvelut</h4>
-            <ul className="space-y-2 text-sm text-blue-100">
-              <li>Kiinteistövakuutus</li>
-              <li>Kaluskovakuutus</li>
-              <li>Vastuuvakuutukset</li>
-              <li>Ryhmähenkivakuutus</li>
-              <li>TyEL-vakuutus</li>
-            </ul>
-          </div>
 
           <div>
             <h4 className="font-semibold mb-4">Yhtiöt</h4>

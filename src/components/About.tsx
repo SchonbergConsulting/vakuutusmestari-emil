@@ -89,22 +89,14 @@ const About = () => {
             </CardHeader>
             <CardContent className="py-[50px]">
               <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold mb-2">Riippumaton neuvonta</h4>
-                  <p className="text-muted-foreground text-sm">
-                    Vakuutusedustustajana toimin yritysten etujen mukaisesti 
-                    ja annan puolueetonta neuvontaa liiketoiminnan vakuutusasioissa. 
-                    Tavoitteeni on löytää juuri yrityksellesi sopivat vakuutusratkaisut.
-                  </p>
-                </div>
                 <div className="space-y-2">
                   <div className="flex items-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary" />
+                    <CheckCircle className="h-5 w-5 text-primary" />
                     <span className="text-sm">Kerron sinulle asiat niin kuin ne on, en koita myydä sinulle ns. turhia vakuutuksia</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary" />
-                    <span className="text-sm">Yrityksen tarpeet etusijalla, jos tarjoukseni ei ole kiplailukykyinen ymmärrän hyvin jos ett halua vaihtaa palveluntarjoojaa. Lupaan kuitenkin tehdä parhani että saamme kilpailukykyisen tarjouksen sinun yritykselle.</span>
+                    <CheckCircle className="h-5 w-5 text-primary" />
+                    <span className="text-sm">Yrityksen tarpeet etusijalla, jos tarjoukseni ei ole kilpailukykyinen ymmärrän hyvin jos et halua vaihtaa palveluntarjoojaa. Lupaan kuitenkin tehdä parhani että saamme kilpailukykyisen tarjouksen sinun yritykselle.</span>
                   </div>
                 </div>
               </div>

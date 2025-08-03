@@ -30,9 +30,12 @@ const Contact = () => {
                   050 441 2262
                 </Button>
               </a>
-              <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground">
-                <Clock className="h-4 w-4" />
-                <span>Ma-Su 9-20</span>
+              <div className="flex flex-col items-center justify-center space-y-1 text-sm text-muted-foreground">
+                <div className="flex items-center space-x-2">
+                  <Clock className="h-4 w-4" />
+                  <span>Ma-Su 9-20</span>
+                </div>
+                <span>Asiakkaille 24/7</span>
               </div>
             </CardContent>
           </Card>
@@ -112,23 +115,16 @@ const Contact = () => {
               <h3 className="text-xl font-bold mb-4 text-center">
                 Miksi yrityksen kannattaa ottaa yhteyttä?
               </h3>
-              <div className="space-y-3">
-                <div className="flex items-start space-x-2">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span className="text-sm">Yritykseen räätälöity palvelu</span>
-                </div>
-                <div className="flex items-start space-x-2">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span className="text-sm">Liiketoiminnan riskien arviointi</span>
-                </div>
-                <div className="flex items-start space-x-2">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span className="text-sm">Maksuttomat yrityskonsultaatiot</span>
-                </div>
-                <div className="flex items-start space-x-2">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span className="text-sm">Pitkäaikaiset yhteistyösuhteet</span>
-                </div>
+              <div className="space-y-4 text-sm">
+                <p>
+                  Teen sinulle kilpailukykyisen tarjouksen. Joko saamme halvemmat hinnat tai kattavemmat turvat, tai sitten tulee esille, että sinulla on jo vakuutukset niin hyvässä kunnossa, ettei vaihto kannata.
+                </p>
+                <p>
+                  Jos olet halukas lähettämään minulle kopion nykyisistä vakuutuspapereistasi, voin tehdä vertailun puolestasi ja heti kertoa, kannattaako yhtiötä vaihtaa vai ei. Helpoin tapa sinulle on lähettää paperit minulle, kerron suoraan, mikä tilanne on.
+                </p>
+                <p>
+                  Tämä vie sinulta aluksi vain noin 10 minuuttia, ja jos päädymme vaihtamaan yhtiötä, niin noin 20–30 minuuttia lisää. Vastaan myös kaikkiin mahdollisiin ehtojen eroihin liittyviin kysymyksiin.
+                </p>
               </div>
               
               <div className="mt-6 text-center">
