@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emil Schönberg - Vakuutusedustustaja</title>
+    <meta name="description" content="Emil Schönberg toimii vakuutusedustustajana ja tarjoaa Pohjola Vakuutus Oy:n, OP-Henkivakuutus Oy:n ja Ilmarisen vakuutuksia yrityksille.">
+    <meta name="author" content="Emil Schönberg">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Emil Schönberg - Vakuutusedustustaja">
+    <meta property="og:description" content="Emil Schönberg toimii vakuutusedustustajana ja tarjoaa Pohjola Vakuutus Oy:n, OP-Henkivakuutus Oy:n ja Ilmarisen vakuutuksia yrityksille.">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'hsl(221, 83%, 53%)',
+                        'primary-foreground': 'hsl(210, 40%, 98%)',
+                        secondary: 'hsl(210, 40%, 96%)',
+                        'secondary-foreground': 'hsl(222, 84%, 4.9%)',
+                        accent: 'hsl(210, 40%, 96%)',
+                        'accent-foreground': 'hsl(222, 84%, 4.9%)',
+                        muted: 'hsl(210, 40%, 96%)',
+                        'muted-foreground': 'hsl(215, 13%, 65%)',
+                        background: 'hsl(0, 0%, 100%)',
+                        foreground: 'hsl(222, 84%, 4.9%)',
+                        card: 'hsl(0, 0%, 100%)',
+                        'card-foreground': 'hsl(222, 84%, 4.9%)',
+                        border: 'hsl(214, 32%, 91%)',
+                        ring: 'hsl(221, 83%, 53%)',
+                    },
+                    backgroundImage: {
+                        'gradient-hero': 'linear-gradient(135deg, hsl(221, 83%, 53%), hsl(221, 83%, 43%))',
+                        'gradient-subtle': 'linear-gradient(180deg, hsl(210, 40%, 98%), hsl(0, 0%, 100%))',
+                    },
+                    boxShadow: {
+                        'card': '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
+                        'elegant': '0 10px 30px -10px hsl(221, 83%, 53%, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        /* Photo carousel styles */
+        .photo-carousel {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 0.5rem;
+        }
+        
+        .photo-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .photo-slide.active {
+            opacity: 1;
+        }
+        
+        .photo-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .carousel-dots {
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .carousel-dot {
+            width: 0.75rem;
+            height: 0.75rem;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .carousel-dot.active {
+            background-color: white;
+        }
+    </style>
+</head>
+<body class="min-h-screen smooth-scroll">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="text-2xl font-bold text-primary">
+                        Emil Schönberg
+                    </div>
+                    <div class="hidden md:block text-sm text-muted-foreground">
+                        Vakuutusedustustaja
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="#palvelut" class="text-foreground hover:text-primary transition-colors">
+                        Palvelut
+                    </a>
+                    <a href="#tietoa" class="text-foreground hover:text-primary transition-colors">
+                        Tietoa minusta
+                    </a>
+                    <a href="#yhteystiedot" class="text-foreground hover:text-primary transition-colors">
+                        Yhteystiedot
+                    </a>
+                </nav>
+
+                <div class="flex items-center space-x-2">
+                    <div class="hidden md:flex items-center space-x-1 px-3 py-2 text-sm text-foreground">
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        050 441 2262
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1 px-3 py-2 text-sm text-foreground">
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        emil.schonberg@pohjola.fi
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-hero text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                        <span class="text-blue-100 font-medium">Vakuutusedustustaja</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Emil Schönberg
+                    </h1>
+                    
+                    <p class="text-xl mb-6 text-blue-100 leading-relaxed">
+                        Emil Schönberg toimii vakuutusedustustajana ja tarjoaa Pohjola Vakuutus Oy:n, 
+                        OP-Henkivakuutus Oy:n ja Ilmarisen vakuutuksia yrityksille.
+                    </p>
+                    
+                    <div class="flex items-center space-x-2 mb-8">
+                        <svg class="h-5 w-5 text-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                        </svg>
+                        <span class="text-blue-100 text-sm">
+                            Rekisteröity Finanssivalvonnan vakuutusedustajarekisteriin
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="tel:+358504412262" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-primary hover:bg-gray-100 h-11 px-8">
+                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            Soita nyt: 050 441 2262
+                        </a>
+                        <a href="mailto:emil.schonberg@pohjola.fi" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-primary hover:bg-gray-100 h-11 px-8">
+                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            emil.schonberg@pohjola.fi
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 shadow-elegant">
+                        <div class="aspect-square bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-white/60 text-sm">Kuva Emil Schönbergistä</span>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="font-semibold mb-2">Luotettava asiantuntija</h3>
+                            <p class="text-blue-100 text-sm">
+                                Yli vuosien kokemus vakuutusalalta
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tietoa" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    Tietoa minusta
+                </h2>
+                <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
+                    Emil Schönberg toimii vakuutusedustustajana ja on erikoistunut yritysten 
+                    vakuutusratkaisuihin toimien aina asiakasyritysten etujen mukaisesti.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <!-- Photo Carousel -->
+                    <div class="photo-carousel bg-gray-200">
+                        <div class="photo-slide active">
+                            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+                                <span class="text-gray-600">Emil Schönberg - Kuva 1</span>
+                            </div>
+                        </div>
+                        <div class="photo-slide">
+                            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+                                <span class="text-gray-600">Emil Schönberg - Kuva 2</span>
+                            </div>
+                        </div>
+                        <div class="photo-slide">
+                            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+                                <span class="text-gray-600">Emil Schönberg - Kuva 3</span>
+                            </div>
+                        </div>
+                        <div class="carousel-dots">
+                            <div class="carousel-dot active" onclick="showSlide(0)"></div>
+                            <div class="carousel-dot" onclick="showSlide(1)"></div>
+                            <div class="carousel-dot" onclick="showSlide(2)"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">
+                            Ammatillinen osaaminen
+                        </h3>
+                        <p class="text-muted-foreground mb-6 leading-relaxed">
+                            Emil Schönberg toimii vakuutusedustustajana ja tarjoaa Pohjola Vakuutus Oy:n, 
+                            OP-Henkivakuutus Oy:n ja Ilmarisen vakuutuksia. Yritys on rekisteröity 
+                            Finanssivalvonnan vakuutusedustajarekisteriin, ja sen toimintaa valvoo Finanssivalvonta.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="flex items-center space-x-3">
+                                <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                                <span class="text-sm">Vakuutusedustustaja</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                                <span class="text-sm">Jatkuva koulutus</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                                <span class="text-sm">Yrityskeskeinen palvelu</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                                <span class="text-sm">Luotettava kumppani</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="rounded-lg border bg-card text-card-foreground shadow-card">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <h3 class="text-2xl font-semibold leading-none tracking-tight flex items-center space-x-2">
+                            <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                            <span>Virallinen status</span>
+                        </h3>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold mb-2">Finanssivalvonnan rekisteri</h4>
+                                <p class="text-muted-foreground text-sm">
+                                    Yritys on rekisteröity Finanssivalvonnan vakuutusedustajarekisteriin, 
+                                    ja sen toimintaa valvoo Finanssivalvonta. Tämä takaa toiminnan 
+                                    läpinäkyvyyden ja luotettavuuden.
+                                </p>
+                            </div>
+                            <div class="bg-accent rounded-lg p-4">
+                                <p class="text-sm font-medium text-primary">
+                                    Valvova viranomainen: Finanssivalvonta (FIN-FSA)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-lg border bg-card text-card-foreground shadow-card">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <h3 class="text-2xl font-semibold leading-none tracking-tight flex items-center space-x-2">
+                            <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                            <span>Asiakkaan etu edellä</span>
+                        </h3>
+                    </div>
+                    <div class="p-6 pt-0" style="padding-top: 50px; padding-bottom: 50px;">
+                        <div class="space-y-4">
+                            <div class="space-y-2">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m3.172-4.172a4 4 0 115.656 5.656L12 21l-7.828-7.828a4 4 0 115.656-5.656L12 9.172l2.172-2.172z"></path>
+                                    </svg>
+                                    <span class="text-sm">Kerron sinulle asiat niin kuin ne on, en koita myydä sinulle ns. turhia vakuutuksia</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m3.172-4.172a4 4 0 115.656 5.656L12 21l-7.828-7.828a4 4 0 115.656-5.656L12 9.172l2.172-2.172z"></path>
+                                    </svg>
+                                    <span class="text-sm">Yrityksen tarpeet etusijalla, jos tarjoukseni ei ole kilpailukykyinen ymmärrän hyvin jos et halua vaihtaa palveluntarjoojaa. Lupaan kuitenkin tehdä parhani että saamme kilpailukykyisen tarjouksen sinun yritykselle.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="palvelut" class="py-20 bg-gradient-subtle">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    Yritysvakuutukset
+                </h2>
+                <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
+                    Emil Schönberg toimii vakuutusedustustajana ja tarjoaa Pohjola Vakuutus Oy:n, 
+                    OP-Henkivakuutus Oy:n ja Ilmarisen vakuutuksia.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Pohjola Vakuutus -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-card hover:shadow-elegant transition-all duration-300">
+                    <div class="flex flex-col space-y-1.5 p-6 text-center">
+                        <div class="mx-auto mb-4 p-3 bg-accent rounded-full w-fit">
+                            <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold leading-none tracking-tight">Pohjola Vakuutus Oy</h3>
+                        <p class="text-sm text-primary font-medium">Pääasiallinen vakuutusyhtiö</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <p class="text-muted-foreground mb-4">Yrityksen vakuutukset</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center space-x-2">
+                                <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m3.172-4.172a4 4 0 115.656 5.656L12 21l-7.828-7.828a4 4 0 115.656-5.656L12 9.172l2.172-2.172z"></path>
+                                </svg>
+                                <span class="text-sm">Vastuuvakuutukset</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m3.172-4.172a4 4 0 115.656 5.656L12 21l-7.828-7.828a4 4 0 115.656-5.656L12 9.172l2.172-2.172z"></path>
+                                </svg>
+                                <span class="text-sm">Oikeusturva</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m3.172-4.172a4 4 0 115.656 5.656L12 21l-7.828-7.828a4 4 0 115.656-5.656L12 9.172l2.172-2.172z"></path>
+                                </svg>
+                                <span class="text-sm">Omaisuus- ja kiinteistövakuutus</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m3.172-4.172a4 4 0 115.656 5.656L12 21l-7.828-7.828a4 4 0 115.656-5.656L12 9.172l2.172-2.172z"></path>
+                                </svg>
+                                <span class="text-sm">Keskeytysvakuutus</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- OP-Henkivakuutus -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-card hover:shadow-elegant transition-all duration-300">
+                    <div class="flex flex-col space-y-1.5 p-6 text-center">
+                        <div class="mx-auto mb-4 p-3 bg-accent rounded-full w-fit">
+                            <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold leading-none tracking-tight">OP-Henkivakuutus Oy</h3>
+                        <p class="text-sm text-primary font-medium">Henkilöstöturva</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <p class="text-muted-foreground mb-4">Henkilöstövakuutukset</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center space-x-2">
+                                <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m3.172-4.172a4 4 0 115.656 5.656L12 21l-7.828-7.828a4 4 0 115.656-5.656L12 9.172l2.172-2.172z"></path>
+                                </svg>
+                                <span class="text-sm">Tapaturmavakuutus</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m3.172-4.172a4 4 0 115.656 5.656L12 21l-7.828-7.828a4 4 0 115.656-5.656L12 9.172l2.172-2.172z"></path>
+                                </svg>
+                                <span class="text-sm">Terveysturvavakuutus</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m3.172-4.172a4 4 0 115.656 5.656L12 21l-7.828-7.828a4 4 0 115.656-5.656L12 9.172l2.172-2.172z"></path>
+                                </svg>
+                                <span class="text-sm">Eläkevakuutus</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m3.172-4.172a4 4 0 115.656 5.656L12 21l-7.828-7.828a4 4 0 115.656-5.656L12 9.172l2.172-2.172z"></path>
+                                </svg>
+                                <span class="text-sm">Ryhmähenkivakuutus</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Ilmarinen -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-card hover:shadow-elegant transition-all duration-300">
+                    <div class="flex flex-col space-y-1.5 p-6 text-center">
+                        <div class="mx-auto mb-4 p-3 bg-accent rounded-full w-fit">
+                            <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold leading-none tracking-tight">Ilmarinen</h3>
+                        <p class="text-sm text-primary font-medium">Työeläketurva</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <p class="text-muted-foreground mb-4">Lakisääteiset työeläkevakuutukset</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center space-x-2">
+                                <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m3.172-4.172a4 4 0 115.656 5.656L12 21l-7.828-7.828a4 4 0 115.656-5.656L12 9.172l2.172-2.172z"></path>
+                                </svg>
+                                <span class="text-sm">TyEL-vakuutus</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m3.172-4.172a4 4 0 115.656 5.656L12 21l-7.828-7.828a4 4 0 115.656-5.656L12 9.172l2.172-2.172z"></path>
+                                </svg>
+                                <span class="text-sm">YEL-vakuutus</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg p-8 shadow-card">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">
+                            Miksi valita Emil Schönberg yrityksesi vakuutusedustajaksi?
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start space-x-3">
+                                <svg class="h-5 w-5 text-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m3.172-4.172a4 4 0 115.656 5.656L12 21l-7.828-7.828a4 4 0 115.656-5.656L12 9.172l2.172-2.172z"></path>
+                                </svg>
+                                <span>Henkilökohtainen palvelu ja pitkäaikaiset asiakassuhteet</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="h-5 w-5 text-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m3.172-4.172a4 4 0 115.656 5.656L12 21l-7.828-7.828a4 4 0 115.656-5.656L12 9.172l2.172-2.172z"></path>
+                                </svg>
+                                <span>Myyn vakuutukset sinun tarpeesi mukaan, mutta toki jos huomaan isoja puutteita niin suosittelen järkeviä lisäratkaisuja.</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="h-5 w-5 text-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m3.172-4.172a4 4 0 115.656 5.656L12 21l-7.828-7.828a4 4 0 115.656-5.656L12 9.172l2.172-2.172z"></path>
+                                </svg>
+                                <span>Vastaan oikeasti puhelimeen kun minulle soitetaan</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-accent rounded-lg p-6 text-center">
+                        <div class="aspect-video bg-white/50 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-muted-foreground text-sm">
+                                Kuva yritysneuvottelusta tai toimistosta
+                            </span>
+                        </div>
+                        <p class="text-sm text-muted-foreground">
+                            Yritysten vakuutustarpeiden tunnistaminen on erikoisalani
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="yhteystiedot" class="py-20 bg-gradient-subtle">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    Ota yhteyttä
+                </h2>
+                <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
+                    Autan yritystäsi löytämään oikeat vakuutusratkaisut. Ota rohkeasti yhteyttä 
+                    maksuttomaan yritysneuvontaan.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 mb-12">
+                <!-- Phone -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-card hover:shadow-elegant transition-all duration-300">
+                    <div class="flex flex-col space-y-1.5 p-6 text-center">
+                        <div class="mx-auto mb-4 p-3 bg-primary rounded-full w-fit">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold leading-none tracking-tight">Puhelinpalvelu</h3>
+                        <p class="text-sm text-muted-foreground">Nopea yhteys suoraan asiantuntijaan</p>
+                    </div>
+                    <div class="p-6 pt-0 text-center">
+                        <a href="tel:+358504412262" class="block">
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-11 px-8 w-full mb-4">
+                                050 441 2262
+                            </button>
+                        </a>
+                        <div class="flex flex-col items-center justify-center space-y-1 text-sm text-muted-foreground">
+                            <div class="flex items-center space-x-2">
+                                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span>Ma-Su 9-20</span>
+                            </div>
+                            <span>Asiakkaille 24/7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-card hover:shadow-elegant transition-all duration-300">
+                    <div class="flex flex-col space-y-1.5 p-6 text-center">
+                        <div class="mx-auto mb-4 p-3 bg-primary rounded-full w-fit">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold leading-none tracking-tight">Sähköposti</h3>
+                        <p class="text-sm text-muted-foreground">Lähetä viesti ja vastaan pian</p>
+                    </div>
+                    <div class="p-6 pt-0 text-center">
+                        <a href="mailto:emil.schonberg@pohjola.fi" class="block">
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-11 px-8 w-full mb-4">
+                                emil.schonberg@pohjola.fi
+                            </button>
+                        </a>
+                        <div class="flex items-center justify-center space-x-2 text-sm text-muted-foreground">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                            </svg>
+                            <span>Vastaan 24h sisään</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Meeting -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-card">
+                    <div class="flex flex-col space-y-1.5 p-6 text-center">
+                        <div class="mx-auto mb-4 p-3 bg-primary rounded-full w-fit">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold leading-none tracking-tight">Tapaaminen</h3>
+                        <p class="text-sm text-muted-foreground">Henkilökohtainen palvelu</p>
+                    </div>
+                    <div class="p-6 pt-0 text-center">
+                        <p class="text-muted-foreground mb-4 text-sm">
+                            Saamme asiat hoidettua näppärästi puhelimen ja internetin kautta, 
+                            mutta halutessasi voin myös tavata Uusimaa-alueella henkilökohtaisesti.
+                        </p>
+                        <a href="https://calendly.com/emil-schonberg" target="_blank" rel="noopener noreferrer">
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-11 px-8 w-full">
+                                Varaa tapaaminen
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg p-8 shadow-card">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">
+                            Yleisiä kysymyksiä
+                        </h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold mb-2">Onko neuvonta maksutonta?</h4>
+                                <p class="text-muted-foreground text-sm">
+                                    Kyllä, tarjoan maksutonta neuvontaa yritysten vakuutusasioissa. 
+                                    Maksan toimintani vakuutusyhtiöiden palkkioista.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Kuinka nopeasti saan tarjouksen?</h4>
+                                <p class="text-muted-foreground text-sm">
+                                    Useimmiten pystyn tekemään tarjouksen samana päivänä. 
+                                    Monimutkaisemmat tapaukset voivat vaatia muutaman päivän.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Voitko auttaa olemassa olevien yritysvakuutusten kanssa?</h4>
+                                <p class="text-muted-foreground text-sm">Kyllä, voin arvioida yrityksen nykyisiä vakuutuksia ja antaa suosituksia parannuksista tai muutoksista.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-accent rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-4 text-center">
+                            Miksi yrityksen kannattaa ottaa yhteyttä?
+                        </h3>
+                        <div class="space-y-4 text-sm">
+                            <p>
+                                Teen sinulle kilpailukykyisen tarjouksen. Joko saamme halvemmat hinnat tai kattavemmat turvat, tai sitten tulee esille, että sinulla on jo vakuutukset niin hyvässä kunnossa, ettei vaihto kannata.
+                            </p>
+                            <p>
+                                Jos olet halukas lähettämään minulle kopion nykyisistä vakuutuspapereistasi, voin tehdä vertailun puolestasi ja heti kertoa, kannattaako yhtiötä vaihtaa vai ei. Helpoin tapa sinulle on lähettää paperit minulle, kerron suoraan, mikä tilanne on.
+                            </p>
+                            <p>
+                                Tämä vie sinulta aluksi vain noin 10 minuuttia, ja jos päädymme vaihtamaan yhtiötä, niin noin 20–30 minuuttia lisää. Vastaan myös kaikkiin mahdollisiin ehtojen eroihin liittyviin kysymyksiin.
+                            </p>
+                        </div>
+                        
+                        <div class="mt-6 text-center">
+                            <div class="aspect-video rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center">
+                                <span class="text-gray-600 text-sm">Ammatillinen toimisto, jossa neuvotteluja käydään</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">Emil Schönberg</h3>
+                    <p class="text-blue-100 mb-4 leading-relaxed">
+                        Emil Schönberg toimii vakuutusedustustajana ja tarjoaa Pohjola Vakuutus Oy:n, 
+                        OP-Henkivakuutus Oy:n ja Ilmarisen vakuutuksia yrityksille.
+                    </p>
+                    <div class="space-y-2 text-sm text-blue-100">
+                        <div class="flex items-center space-x-2">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span>050 441 2262</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <span>emil.schonberg@pohjola.fi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Yhtiöt</h4>
+                    <ul class="space-y-2 text-sm text-blue-100">
+                        <li>Pohjola Vakuutus Oy</li>
+                        <li>OP-Henkivakuutus Oy</li>
+                        <li>Ilmarinen</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-blue-400 mt-8 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <div class="text-sm text-blue-100">
+                        <p>
+                            Yritys on rekisteröity Finanssivalvonnan vakuutusedustajarekisteriin, 
+                            ja sen toimintaa valvoo Finanssivalvonta.
+                        </p>
+                    </div>
+                    <div class="text-sm text-blue-100">
+                        © 2024 Emil Schönberg - Vakuutusedustustaja
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Photo Carousel -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.photo-slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+        
+        function showSlide(index) {
+            // Hide all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Show the selected slide
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            
+            currentSlide = index;
+        }
+        
+        // Auto-rotate slides every 5 seconds
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }, 5000);
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
